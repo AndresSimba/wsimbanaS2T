@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wsimbanaTS2.Resources.Views.CalculadoraNotas"         
+             Title="CalculadoraNotas">
+    <ScrollView>
+    <VerticalStackLayout
+        
+        Spacing="25"
+        Padding="25">
+
+        
+        
+        <Label 
+            Text="SISTEMA DE CALIFICACIONES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Picker 
+            Title="Seleccione un estudiante"
+            x:Name="pkEstudiantes">
+            <Picker.Items>
+                <x:String>William Simbaña</x:String>
+                <x:String>Nicole Moreta</x:String>
+                <x:String>Abigail Gahona</x:String>
+                <x:String>Lenin Simbaña</x:String>
+                <x:String>Aneglica Simbaña</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label
+            Text="PARCIAL 1"
+            HorizontalOptions="Center"
+        />
+            <Grid ColumnSpacing="1"
+              RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label
+        Text="Ingrese N Seguimiento"
+        Grid.Row="0"
+        Grid.Column="0"/>
+                <Label
+             x:Name="ErrorLabel"
+             TextColor="Red"
+             FontSize="12"
+             IsVisible="False"
+             Grid.Row="0"
+            Grid.Column="1"/>
+                <Entry
+        x:Name="txtNotaSeguimiento"
+        Placeholder="Ingresa nota seguimiento"
+        Grid.Row="0"
+        Grid.Column="1"
+        TextChanged="txtNotaSeguimiento_TextChanged"
+                />
+
+                <Label
+        Text="Ingrese Nota Examen"
+        Grid.Row="1"
+        Grid.Column="0"/>
+                <Label
+          x:Name="ErrorLabelE"
+          TextColor="Red"
+          FontSize="12"
+          IsVisible="False"
+          Grid.Row="1"
+         Grid.Column="1"/>
+                <Entry
+        x:Name="txtNotaExamen"
+        Placeholder="Ingresa nota Examen"
+        Grid.Row="1"
+        Grid.Column="1"
+        TextChanged="txtNotaExamen_TextChanged"
+        />
+
+                <Label
+        Text="Nota PARCIAL 1"
+        Grid.Row="2"
+        Grid.Column="0"/>
+                <Label
+          x:Name="lblNotaParcial1"
+          Text="A"
+          TextColor="Red"
+          Grid.Row="2"
+         Grid.Column="1"/>
+            </Grid>
+            <Label
+     Text="PARCIAL 2"
+     HorizontalOptions="Center"/>
+
+            <Grid 
+                ColumnSpacing="1"
+                RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label
+ Text="Ingrese N Seguimiento"
+ Grid.Row="0"
+ Grid.Column="0"/>
+                <Label
+      x:Name="ErrorLabel2"
+      TextColor="Red"
+      FontSize="12"
+      IsVisible="False"
+      Grid.Row="0"
+     Grid.Column="1"/>
+                <Entry
+ x:Name="txtNotaSeguimiento2"
+ Placeholder="Ingresa nota seguimiento"
+ Grid.Row="0"
+ Grid.Column="1"
+ TextChanged="txtNotaSeguimiento2_TextChanged"
+         />
+                <Label
+ Text="Ingrese N Examen"
+ Grid.Row="1"
+ Grid.Column="0"/>
+                <Label
+   x:Name="ErrorLabelE2"
+   TextColor="Red"
+   FontSize="12"
+   IsVisible="False"
+   Grid.Row="1"
+  Grid.Column="1"/>
+                <Entry
+ x:Name="txtNotaExamen2"
+ Placeholder="Ingresa nota Examen"
+ Grid.Row="1"
+ Grid.Column="1"
+ TextChanged="txtNotaExamen2_TextChanged"
+ />
+
+                <Label
+ Text="Nota PARCIAL 2"
+ Grid.Row="2"
+ Grid.Column="0"/>
+                <Label
+   x:Name="lblNotaParcial2"
+   Text="B"
+   TextColor="Red"
+   Grid.Row="2"
+  Grid.Column="1"/>
+                <Label
+Text="NOTA FINAL"
+Grid.Row="3"
+Grid.Column="0"/>
+                <Label
+  x:Name="lblNotaFinal"
+  Text="C"
+  TextColor="Red"
+  Grid.Row="3"
+ Grid.Column="1"/>
+                <Label
+ x:Name="lblEstado"
+ Text="D"
+ TextColor="Red"
+ Grid.Row="4"
+Grid.Column="1"/>
+
+            </Grid>
+
+          <Button
+              x:Name="btnCalcularNotas"
+              Text="CALCULAR NOTAS DEL ESTUDIANTE"
+              Clicked="btnCalcularNotas_Clicked"
+            ></Button>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
