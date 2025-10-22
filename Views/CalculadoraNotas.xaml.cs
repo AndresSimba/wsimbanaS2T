@@ -90,7 +90,7 @@ public partial class CalculadoraNotas : ContentPage
 
         if (!notaSeguimientoValida || !notaExamenValida || !notaSeguimiento2Valida || !notaExamen2Valida)
         {
-            DisplayAlert("Error", "Por favor, ingrese notas válidas antes de calcular.", "OK");
+            await DisplayAlert("Error", "Por favor, ingrese notas válidas antes de calcular.", "OK");
             return;
         }
         else { 

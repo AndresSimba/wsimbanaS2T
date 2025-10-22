@@ -9,7 +9,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new Resources.Views.CalculadoraNotas());
+            return new Window( new NavigationPage( new Resources.Views.vLogin()));
         }
     }
 }
