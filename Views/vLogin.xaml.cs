@@ -30,16 +30,17 @@ public partial class vLogin : ContentPage
 					encontrado = true;
                     break;
                 }
-				else
-				{
-					await DisplayAlert("Error", "Usuario o contraseña incorrectos","OK");	
-                }
+				
             }
 
             
             if (encontrado)
             {
                await Navigation.PushAsync(new vBienvenida(usuario, contrasena));
+            }
+            else
+            {
+                await DisplayAlert("Error", "Usuario o contraseña incorrectos", "OK");
             }
         }
 		catch (Exception ex)

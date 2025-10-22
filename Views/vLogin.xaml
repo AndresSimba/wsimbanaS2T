@@ -20,8 +20,12 @@
      IsPassword="True"
      />
         <Button x:Name="btnIngresar"
-         Text="abrir Ventana"
-         Clicked="btnIngresar_Clicked">
-        </Button>
+         Text="Ingresar"
+         Clicked="btnIngresar_Clicked"
+        />
+        <Button
+            x:Name="btnCalculadora"
+            Text="Ir a Calculadora"
+            />
     </VerticalStackLayout>
 </ContentPage>
