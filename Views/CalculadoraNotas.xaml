@@ -5,13 +5,24 @@
              Title="CalculadoraNotas">
     <ScrollView>
     <VerticalStackLayout
-        
         Spacing="25"
         Padding="25">
 
-        
-        
-        <Label 
+            <!--OBJETO QUE RECIBE EL DATO-->
+            <Label
+     x:Name="lblUsuario"
+     TextColor="Green"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+     />
+            <Label
+      x:Name="lblContrasena"
+      TextColor="Green"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+      />
+
+            <Label 
             Text="SISTEMA DE CALIFICACIONES"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />

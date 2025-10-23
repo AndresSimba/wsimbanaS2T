@@ -23,9 +23,9 @@
          Text="Ingresar"
          Clicked="btnIngresar_Clicked"
         />
-        <Button
+        <!--<Button
             x:Name="btnCalculadora"
             Text="Ir a Calculadora"
-            />
+            />-->
     </VerticalStackLayout>
 </ContentPage>

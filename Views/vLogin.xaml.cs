@@ -36,7 +36,7 @@ public partial class vLogin : ContentPage
             
             if (encontrado)
             {
-               await Navigation.PushAsync(new vBienvenida(usuario, contrasena));
+               await Navigation.PushAsync(new CalculadoraNotas(usuario, contrasena));
             }
             else
             {

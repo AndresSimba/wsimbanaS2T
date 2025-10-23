@@ -3,10 +3,13 @@ namespace wsimbanaTS2.Resources.Views;
 
 public partial class CalculadoraNotas : ContentPage
 {
-	public CalculadoraNotas()
-	{
-		InitializeComponent();
-	}
+    public CalculadoraNotas(string usuario, string contrasena)
+    {
+        InitializeComponent();
+
+        lblUsuario.Text = $"Usuario: {usuario}";
+        lblContrasena.Text = $"Contraseña: {contrasena}";
+    }
 
     private void txtNotaSeguimiento_TextChanged(object sender, TextChangedEventArgs e)
     {
