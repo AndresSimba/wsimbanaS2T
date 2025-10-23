@@ -20,7 +20,6 @@ public partial class CalculadoraNotas : ContentPage
 
         if (double.TryParse(texto, out double valor))
         {
-            // Verifica máximo 2 decimales
             int decimales = texto.Contains('.') ? texto.Split('.')[1].Length : 0;
 
             if (valor > 10)
@@ -51,7 +50,6 @@ public partial class CalculadoraNotas : ContentPage
 
         if (double.TryParse(texto, out double valor))
         {
-            // Verifica máximo 2 decimales
             int decimales = texto.Contains('.') ? texto.Split('.')[1].Length : 0;
 
             if (valor > 10)
